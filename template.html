@@ -49,12 +49,13 @@
     display: inline-block;
     background-color: #000000;
     margin-top: 50px;
-    margin-left: 50px;
+    margin-left: 66px;
   }
 
   .rectangle {
-    width: 350px;
+    width: 400px;
     height: 200px;
+    display: inline-block;
   }
 
   .red {
@@ -63,6 +64,50 @@
 
   .blue {
     background-color: #0000ff;
+  }
+
+  .wrapper {
+    background-color: #555555;
+    width: 600px;
+    height: 130px;
+    margin: 10px;
+  }
+
+  .in-row {
+    display: inline-block;
+    background-color: #cccccc;
+    margin-top: 6px;
+    margin-left: 6px;
+  }
+
+  .three{
+    width: 192px;
+    height: 118px;
+  }
+
+  .four-short{
+    vertical-align: top;
+    width: 142px;
+    height: 75px;
+  }
+
+  .four-tall{
+    vertical-align: top;
+    width: 142px;
+    height: 100px;
+  }
+
+  .two-short {
+    vertical-align: bottom;
+    width: 291px;
+    height: 35px;
+  }
+
+  .two-tall {
+    vertical-align: bottom;
+    width: 291px;
+    height: 118px;
+
   }
 
   </style>
@@ -80,15 +125,23 @@
 
   <!-- <div class="black box1"></div>
   <div class="black box2"></div> -->
-  
-  <div class="rectangle red">
-    <div class="black"></div>
-    <div class="black"></div>
+
+  <!-- <div class="rectangle red">
+    <div class="black"></div><div class="black"></div>
+  </div><div class="rectangle blue">
+    <div class="black"></div><div class="black"></div>
+  </div> -->
+
+  <div class="wrapper">
+    <div class="three in-row"></div><div class="three in-row"></div><div class="three in-row"></div>
   </div>
 
-  <div class="rectangle blue">
-    <div class="black"></div>
-    <div class="black"></div>
+  <div class="wrapper">
+    <div class="four-tall in-row"></div><div class="four-short in-row"></div><div class="four-tall in-row"></div><div class="four-short in-row"></div>
+  </div>
+
+  <div class="wrapper">
+    <div class="two-short in-row"></div><div class="two-tall in-row"></div>
   </div>
 
 </body>
